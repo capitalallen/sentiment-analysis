@@ -1,0 +1,38 @@
+{
+  "name": "sentiment-analysis-model",
+  "version": "0.1.0",
+  "description": "An universal client for the Sentiment Analysis Models API written in Typescript",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "umd:main": "dist/index.umd.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle  --tsconfig tsconfig.json",
+    "dev": "microbundle watch --tsconfig tsconfig.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.4.0",
+    "microbundle": "^0.13.3",
+    "nock": "^12.0.3"
+  },
+  "keywords": [
+    "dev.to",
+    "javascript",
+    "typescript",
+    "api",
+    "client",
+    "universal"
+  ],
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "dependencies": {
+    "@types/querystringify": "^2.0.0",
+    "isomorphic-unfetch": "3.1.0",
+    "querystringify": "2.2.0"
+  }
+}
