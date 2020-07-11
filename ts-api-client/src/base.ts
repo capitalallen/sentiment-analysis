@@ -11,7 +11,7 @@ export abstract class Base {
         if (config){
             this.apiKey = config.apiKey || "";
         }
-        this.basePath = 'http://127.0.0.1:5000/';
+        this.basePath = 'http://355.123.222:5000/';
     }
     
     protected async request<T> (endpoint: string, options?: RequestInit): Promise<T> {
